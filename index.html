@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gustavo Lima - Desenvolvedor Web | Portfólio com projetos em HTML, CSS, JavaScript. Disponível para freelances e oportunidades.">
+  <meta name="keywords" content="desenvolvedor web, frontend, portfolio, HTML, CSS, JavaScript">
+  <meta name="author" content="Gustavo Lima">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gustavo Lima - Desenvolvedor Web">
+  <meta property="og:description" content="Portfólio profissional | Desenvolvedor Web | HTML, CSS, JavaScript">
+  <meta property="og:locale" content="pt_BR">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gustavo Lima - Desenvolvedor Web">
+  <meta name="theme-color" content="#080808">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>Gustavo Lima - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&family=Archivo:wght@400;500;600;700&family=Exo+2:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/img/g.png" type="image/x-icon">
+  <script type="application/ld+json" id="person-schema">
+  {"@context":"https://schema.org","@type":"Person","name":"Gustavo Lima","jobTitle":"Desenvolvedor Web","email":"seuemail@exemplo.com","address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressCountry":"BR"}}
+  </script>
+</head>
+
+<body>
+  <div class="page-loader" id="page-loader" aria-hidden="false">
+    <div class="loader-content">
+      <div class="loader-logo">GUSTAC<span>&#123;</span><span class="loader-cursor">&#125;</span>DE</div>
+      <div class="loader-bar">
+        <div class="loader-progress" id="loader-progress"></div>
+      </div>
+      <p class="loader-text">Carregando portfólio...</p>
+      <div class="loader-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="loader-bg">
+      <div class="loader-shape"></div>
+      <div class="loader-shape"></div>
+      <div class="loader-shape"></div>
+    </div>
+  </div>
+
+  <a href="#main-content" class="skip-link" data-i18n="skip">Pular para o conteúdo</a>
+  <div class="scroll-progress" id="scroll-progress" role="progressbar" aria-label="Progresso da leitura"></div>
+  <header id="header">
+    <a id="logo" href="#">GUSTAC<span>&#123;&#125;</span>DE</a>
+        <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Mudar idioma">PT-BR</button>
+      </div>
+      <ul id="menu" role="menu">
+        <li><a href="#Sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#Projetos" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#Conhecimentos" data-i18n="nav.skills">Conhecimentos</a></li>
+        <li><a href="#Experiencia" data-i18n="nav.experience">Experiência</a></li>
+        <li><a href="#Depoimentos" data-i18n="nav.testimonials">Depoimentos</a></li>
+        <li><a href="#Contato" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div class="banner-content">
+      <span class="availability-badge" id="availability-badge" data-i18n="banner.available">Disponível para projetos</span>
+      <h4 class="banner-greeting" data-i18n="banner.greeting">Olá 👋, meu nome é</h4>
+      <h1 class="banner-name">Gustavo Lima</h1>
+      <p class="banner-tagline" data-i18n="banner.tagline">Sou Desenvolvedor web, codifico ideias, transformo em experiências. ✨</p>
+      <!-- CTA principal: leva para a seção Contato -->
+      <div class="banner-cta">
+        <a href="#Contato" id="whatsapp-btn" class="banner-btn banner-btn-primary">
+          <span class="banner-btn-icon" aria-hidden="true">
+            <svg class="banner-btn-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M9.5 6.5L4 12l5.5 5.5M4 12h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="banner-btn-text" data-i18n="banner.whatsapp">Chama no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <div class="banner-scroll">
+      <span class="scroll-indicator"></span>
+    </div>
+  </div>
+
+  <!-- Barra animada de linguagens logo abaixo do banner -->
+  <section class="tech-marquee" aria-label="Linguagens e ferramentas">
+    <div class="tech-marquee-track">
+      <span class="tech-marquee-item"><img src="./assets/img/html-5.png" alt="HTML">HTML</span>
+      <span class="tech-marquee-item"><img src="./assets/img/css.png" alt="CSS">CSS</span>
+      <span class="tech-marquee-item"><img src="./assets/img/js.png" alt="JavaScript">JavaScript</span>
+      <span class="tech-marquee-item"><img src="./assets/img/python.png" alt="Python">Python</span>
+      <span class="tech-marquee-item"><img src="./assets/img/sql.png" alt="SQL">SQL</span>
+      <span class="tech-marquee-item"><img src="./assets/img/git.png" alt="Git">Git</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">TypeScript</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">React</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">Node.js</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">Figma</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">Docker</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">PostgreSQL</span>
+      <span class="tech-marquee-item"><img src="./assets/img/aws.svg" alt="AWS">AWS</span>
+      <!-- duplicado para loop suave -->
+      <span class="tech-marquee-item"><img src="./assets/img/html-5.png" alt="HTML">HTML</span>
+      <span class="tech-marquee-item"><img src="./assets/img/css.png" alt="CSS">CSS</span>
+      <span class="tech-marquee-item"><img src="./assets/img/js.png" alt="JavaScript">JavaScript</span>
+      <span class="tech-marquee-item"><img src="./assets/img/python.png" alt="Python">Python</span>
+      <span class="tech-marquee-item"><img src="./assets/img/sql.png" alt="SQL">SQL</span>
+      <span class="tech-marquee-item"><img src="./assets/img/git.png" alt="Git">Git</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">TypeScript</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">React</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">Node.js</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">Figma</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">Docker</span>
+      <span class="tech-marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">PostgreSQL</span>
+      <span class="tech-marquee-item"><img src="./assets/img/aws.svg" alt="AWS">AWS</span>
+    </div>
+  </section>
+
+  <main id="main-content">
+  <section id="Sobre" class="section about-section">
+    <div class="about-container">
+      <h2 class="section-title about-title" data-i18n-html="section.about">Sobre mim<span class="ponto">.</span></h2>
+      <div class="about-content">
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <img src="./assets/img/perfil.png" alt="Gustavo Lima - Desenvolvedor" class="about-img" loading="lazy">
+          </div>
+          <div class="about-highlights">
+            <span class="about-highlight" id="about-location">📍 São Paulo, Brasil</span>
+            <span class="about-highlight" id="about-role">💻 Desenvolvedor Web</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="about-bio" id="about-bio">
+            <!-- Bio renderizada via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section" id="Projetos">
+    <h1 class="section-title" data-i18n-html="section.projects">Projetos<span class="ponto">.</span></h1>
+    <div class="container-cards" id="projects-container">
+      <!-- Projetos renderizados via JavaScript -->
+    </div>
+  </section>
+
+  <section class="conhecimentos section" id="Conhecimentos">
+    <h1 class="section-title" data-i18n-html="section.skills">Conhecimentos<span class="ponto">.</span></h1>
+    <div class="portfolio" id="skills-container">
+      <!-- Skills renderizadas via JavaScript -->
+    </div>
+    <div class="info-box" id="infoBox" aria-live="polite"></div>
+  </section>
+
+  <section class="experience section" id="Experiencia">
+    <h1 class="section-title" data-i18n-html="section.experience">Experiência & Formação<span class="ponto">.</span></h1>
+    <div class="timeline" id="timeline-container">
+      <!-- Timeline renderizada via JavaScript -->
+    </div>
+  </section>
+
+  <section class="testimonials section" id="Depoimentos">
+    <h1 class="section-title" data-i18n-html="section.testimonials">O que dizem sobre mim<span class="ponto">.</span></h1>
+    <div class="testimonials-grid" id="testimonials-container"></div>
+  </section>
+<section class="social-media section contact-section" id="Contato">
+    <h1 class="section-title" data-i18n-html="section.contact">Contato<span class="ponto">.</span></h1>
+    <p class="contact-intro" data-i18n="contact.intro">Entre em contato para projetos, oportunidades ou um café virtual ☕</p>
+    <div class="contact-wrapper">
+      <div class="contact-grid">
+        <a href="mailto:seuemail@exemplo.com" id="email-link" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label" data-i18n="contact.email">E-mail</span>
+          <span class="contact-text">gusouzalima5@gmail.com</span>
+        </a>
+        </div>
+      <div class="contact-divider" data-i18n="contact.divider">ou encontre-me em</div>
+      <div class="social-media-content" id="social-container">
+        <!-- Links renderizados via JavaScript -->
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <span>↑</span>
+  </button>
+
+  <!-- Popup Boas-vindas -->
+  <div class="welcome-popup" id="welcome-popup" role="dialog" aria-labelledby="popup-title" aria-modal="true">
+    <div class="welcome-popup-overlay" id="popup-overlay"></div>
+    <div class="welcome-popup-content">
+      <button class="welcome-popup-close" id="popup-close" aria-label="Fechar">&times;</button>
+      <h2 id="popup-title">Olá, seja bem-vindo! 👋</h2>
+      <p>Que bom ter você aqui no meu portfólio. Sinta-se à vontade para explorar meus projetos e entrar em contato!</p>
+      <button class="welcome-popup-btn" id="popup-ok">Explorar</button>
+    </div>
+  </div>
+
+  <!-- Curtidas dos visitantes -->
+  <div class="likes-widget" id="likes-widget">
+    <button class="like-btn" id="like-btn" aria-label="Curtir portfólio">
+      <span class="like-icon">❤️</span>
+      <span class="like-count" id="like-count">0</span>
+      <span class="like-label">curtidas</span>
+    </button>
+    <span class="visitor-count" id="visitor-count">0 visitas</span>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h4>GUSTAC<span>&#123;&#125;</span>DE</h4>
+        <p class="footer-tagline" data-i18n="footer.tagline">Desenvolvedor Web • Transformando ideias em código</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#Sobre">Sobre</a>
+        <a href="#Projetos">Projetos</a>
+        <a href="#Conhecimentos">Conhecimentos</a>
+        <a href="#Depoimentos">Depoimentos</a>
+        <a href="#Contato">Contato</a>
+      </nav>
+      <div class="footer-bottom">
+        <p data-i18n-html="footer.rights">© <span id="current-year"></span> Gustavo Lima. Todos os direitos reservados.</p>
+        <p class="footer-made" data-i18n-html="footer.made">Feito com <span class="heart">❤️</span> por Gustavo Lima</p>
+        <p class="version" data-i18n="footer.version">Versão 2.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
