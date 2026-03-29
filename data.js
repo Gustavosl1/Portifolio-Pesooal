@@ -66,7 +66,7 @@ const PORTFOLIO_DATA = {
       title: "Deart Pinturas",
       description: "Site desenvolvido para modernizar o atendimento de um pintor, facilitando a solicitação de orçamentos pelos clientes.",
       tech: "HTML, CSS, JavaScript",
-      link: "https://deartpinturas.com/",
+      link: "https://deartpinturas.com.br/",
       color: "cyan", // cyan | pink | orange | purple
     },
     {
