@@ -18,7 +18,7 @@ const PORTFOLIO_DATA = {
   about: {
     bio: [
       "Olá, meu nome é Gustavo Lima, sou desenvolvedor web apaixonado por tecnologia e programação.",
-      "Atualmente estou cursando Análise e Desenvolvimento de Sistemas e sempre em busca de novos desafios e aprendizados.",
+      "Sou formado em Análise e Desenvolvimento de Sistemas.",
       "Acredito que a tecnologia é uma ferramenta poderosa para transformar ideias em experiências digitais que fazem a diferença.",
     ],
   },
